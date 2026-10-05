@@ -1,0 +1,24 @@
+{
+  "name": "pathoai-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PathoAI - Clinical AI Decision-Support System: Nodal Metastasis Risk Prediction (MIL)",
+  "scripts": {
+    "predev": "npx kill-port 3000 5000 8000 || true",
+    "dev:all": "concurrently -k --pad-prefix -c \"cyan.bold,green.bold,magenta.bold\" -n \"BACKEND,FRONTEND,AI_SERVICE\" \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:ai\"",
+    "dev": "npm run dev:all",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "dev:ai": "python -m uvicorn app:app --app-dir ai_service --host 0.0.0.0 --port 8000",
+    "install:all": "npm install && npm install --prefix backend && npm install --prefix frontend && python -m pip install -r ai_service/requirements.txt",
+    "build": "npm run build --prefix frontend && npm run build --prefix backend",
+    "build:frontend": "npm run build --prefix frontend",
+    "build:backend": "npm run build --prefix backend",
+    "test": "npm run test --prefix backend",
+    "test:backend": "npm run test --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.5",
+    "kill-port": "^2.0.1"
+  }
+}
