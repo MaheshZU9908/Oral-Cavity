@@ -173,12 +173,9 @@ jobs:
           python-version: ${{ env.PYTHON_VERSION }}
           cache: "pip"
 
-      - name: "Install Chrome and ChromeDriver"
+      - name: "Verify Google Chrome"
         run: |
-          sudo apt-get update -q
-          sudo apt-get install -y chromium-browser chromium-chromedriver
-          echo "Chrome: $(chromium-browser --version)"
-          echo "Driver: $(chromedriver --version)"
+          echo "Chrome version: $(google-chrome --version || which google-chrome || echo 'Chrome pre-installed')"
 
       - name: "Install Python Dependencies"
         run: |
@@ -194,8 +191,7 @@ jobs:
         env:
           BASE_URL: ${{ needs.build.outputs.base_url }}
           HEADLESS: "true"
-          CHROME_BINARY: /usr/bin/chromium-browser
-          CHROMEDRIVER_PATH: /usr/bin/chromedriver
+          CHROME_BINARY: /usr/bin/google-chrome
         run: |
           cd automation
           echo "Running E2E tests against: $BASE_URL"

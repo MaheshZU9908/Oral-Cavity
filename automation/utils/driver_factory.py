@@ -57,10 +57,16 @@ def create_driver(headless: bool = None) -> webdriver.Chrome:
     options.add_experimental_option("excludeSwitches", ["enable-automation"])
     options.add_experimental_option("useAutomationExtension", False)
 
-    # Set binary path if on CI
+    # Set binary path if specified or present
     if CHROME_BINARY and Path(CHROME_BINARY).exists():
         options.binary_location = CHROME_BINARY
         logger.info(f"Using Chrome binary: {CHROME_BINARY}")
+    elif Path("/usr/bin/google-chrome").exists():
+        options.binary_location = "/usr/bin/google-chrome"
+        logger.info("Using system Google Chrome: /usr/bin/google-chrome")
+    elif Path("/usr/bin/chromium-browser").exists():
+        options.binary_location = "/usr/bin/chromium-browser"
+        logger.info("Using system Chromium: /usr/bin/chromium-browser")
 
     # Create service
     service = None
@@ -69,13 +75,7 @@ def create_driver(headless: bool = None) -> webdriver.Chrome:
         service = Service(executable_path=chromedriver_path)
         logger.info(f"Using ChromeDriver: {chromedriver_path}")
     else:
-        try:
-            from webdriver_manager.chrome import ChromeDriverManager
-            service = Service(ChromeDriverManager().install())
-            logger.info("Using WebDriverManager ChromeDriver")
-        except Exception as e:
-            logger.warning(f"WebDriverManager failed: {e}. Using system chromedriver.")
-            service = Service()
+        service = Service()
 
     driver = webdriver.Chrome(service=service, options=options)
     driver.implicitly_wait(IMPLICIT_WAIT)
