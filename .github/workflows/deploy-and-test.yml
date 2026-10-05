@@ -58,7 +58,8 @@ jobs:
         run: |
           echo "Building with base path: /${{ env.REPO_NAME }}/"
           npm run build
-          echo "Build complete."
+          cp dist/index.html dist/404.html
+          echo "Build complete with 404.html SPA fallback."
           ls -la dist/
 
       - name: "Stage 4 - Static Analysis"

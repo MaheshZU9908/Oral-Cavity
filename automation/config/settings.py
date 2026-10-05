@@ -47,20 +47,20 @@ ROUTES = {
 # BROWSER SETTINGS
 # ──────────────────────────────────────────────────────────
 HEADLESS       = os.environ.get("HEADLESS", "true").lower() == "true"
-CHROME_BINARY  = os.environ.get("CHROME_BINARY", "/usr/bin/chromium-browser")
-CHROMEDRIVER   = os.environ.get("CHROMEDRIVER_PATH", "/usr/bin/chromedriver")
+CHROME_BINARY  = os.environ.get("CHROME_BINARY", "")
+CHROMEDRIVER   = os.environ.get("CHROMEDRIVER_PATH", "")
 WINDOW_WIDTH   = int(os.environ.get("WINDOW_WIDTH", "1920"))
 WINDOW_HEIGHT  = int(os.environ.get("WINDOW_HEIGHT", "1080"))
 
 # ──────────────────────────────────────────────────────────
 # TIMEOUTS (seconds)
 # ──────────────────────────────────────────────────────────
-IMPLICIT_WAIT        = 5
-EXPLICIT_WAIT        = 15
-PAGE_LOAD_TIMEOUT    = 30
+IMPLICIT_WAIT        = 0
+EXPLICIT_WAIT        = 5
+PAGE_LOAD_TIMEOUT    = 15
 SCRIPT_TIMEOUT       = 10
-RETRY_COUNT          = 3
-RETRY_DELAY          = 2
+RETRY_COUNT          = 2
+RETRY_DELAY          = 1
 
 # ──────────────────────────────────────────────────────────
 # TEST DATA — DEMO CREDENTIALS
