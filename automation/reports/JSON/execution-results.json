@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "base_url": "https://MaheshZU9908.github.io/Oral-Cavity/",
+    "started_at": "2026-10-05T19:19:00.501282",
+    "environment": "GitHub Pages (Live)",
+    "finished_at": "2026-10-05T19:19:01.032092",
+    "exit_status": 0
+  },
+  "summary": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0,
+    "skipped": 0,
+    "errors": 0,
+    "duration": 0.53
+  },
+  "tests": []
+}

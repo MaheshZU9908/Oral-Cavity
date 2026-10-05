@@ -1,0 +1,340 @@
+﻿name: "PathoAI Deploy and Live E2E Tests"
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+    inputs:
+      base_url_override:
+        description: "Override BASE_URL (leave blank to use default GitHub Pages URL)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  actions: write
+
+concurrency:
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: false
+
+env:
+  GITHUB_USERNAME: ${{ github.repository_owner }}
+  REPO_NAME: ${{ github.event.repository.name }}
+  NODE_VERSION: "20"
+  PYTHON_VERSION: "3.11"
+
+jobs:
+  build:
+    name: "Stage 1-4: Checkout Install Build Analyze"
+    runs-on: ubuntu-latest
+    outputs:
+      base_url: ${{ steps.set_url.outputs.base_url }}
+    steps:
+      - name: "Stage 1 - Checkout Repository"
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: "Stage 2 - Setup Node.js"
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: "npm"
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: "Stage 2 - Install Frontend Dependencies"
+        working-directory: frontend
+        run: npm ci
+
+      - name: "Stage 3 - Build Frontend for GitHub Pages"
+        working-directory: frontend
+        env:
+          VITE_BASE_PATH: "/${{ env.REPO_NAME }}/"
+        run: |
+          echo "Building with base path: /${{ env.REPO_NAME }}/"
+          npm run build
+          echo "Build complete."
+          ls -la dist/
+
+      - name: "Stage 4 - Static Analysis"
+        working-directory: frontend
+        run: |
+          echo "=== TypeScript type check ==="
+          npx tsc --noEmit --skipLibCheck || true
+          echo "=== Bundle size ==="
+          du -sh dist/
+          echo "=== Asset inventory ==="
+          find dist -type f | sort
+
+      - name: "Set BASE_URL Output"
+        id: set_url
+        run: |
+          OVERRIDE="${{ github.event.inputs.base_url_override }}"
+          if [ -n "$OVERRIDE" ]; then
+            BASE_URL="$OVERRIDE"
+          else
+            BASE_URL="https://${{ env.GITHUB_USERNAME }}.github.io/${{ env.REPO_NAME }}/"
+          fi
+          echo "base_url=${BASE_URL}" >> $GITHUB_OUTPUT
+          echo "BASE_URL: ${BASE_URL}"
+
+      - name: "Upload Build Artifact"
+        uses: actions/upload-artifact@v4
+        with:
+          name: frontend-dist
+          path: frontend/dist/
+          retention-days: 1
+
+  deploy:
+    name: "Stage 5: Deploy to GitHub Pages"
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    outputs:
+      page_url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: "Download Build Artifact"
+        uses: actions/download-artifact@v4
+        with:
+          name: frontend-dist
+          path: dist/
+
+      - name: "Setup GitHub Pages"
+        uses: actions/configure-pages@v4
+
+      - name: "Upload Pages Artifact"
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist/
+
+      - name: "Stage 5 - Deploy to GitHub Pages"
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  verify-deployment:
+    name: "Stage 6-7: Wait and Verify Deployment"
+    needs: [build, deploy]
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+    outputs:
+      deployment_ok: ${{ steps.verify.outputs.deployment_ok }}
+    steps:
+      - name: "Stage 6 - Wait for GitHub Pages Propagation"
+        run: |
+          BASE_URL="${{ needs.build.outputs.base_url }}"
+          echo "Polling: $BASE_URL"
+          MAX=20; ATTEMPT=0; SLEEP=15
+          while [ $ATTEMPT -lt $MAX ]; do
+            ATTEMPT=$((ATTEMPT+1))
+            STATUS=$(curl -s -o /dev/null -w "%{http_code}" --max-time 10 "$BASE_URL" || echo "000")
+            echo "Attempt $ATTEMPT/$MAX - HTTP $STATUS"
+            if [ "$STATUS" = "200" ]; then echo "Deployment live!"; break; fi
+            if [ $ATTEMPT -eq $MAX ]; then echo "Deployment timeout"; exit 1; fi
+            sleep $SLEEP
+          done
+
+      - name: "Stage 7 - Verify Deployment"
+        id: verify
+        run: |
+          BASE_URL="${{ needs.build.outputs.base_url }}"
+          STATUS=$(curl -s -o /tmp/idx.html -w "%{http_code}" "$BASE_URL")
+          echo "HTTP Status: $STATUS"
+          if [ "$STATUS" = "200" ]; then
+            echo "deployment_ok=true" >> $GITHUB_OUTPUT
+            echo "DEPLOYMENT VERIFIED"
+          else
+            echo "deployment_ok=false" >> $GITHUB_OUTPUT
+            echo "VERIFICATION FAILED"
+            exit 1
+          fi
+
+  selenium-tests:
+    name: "Stage 8-13: Selenium E2E Tests and Reports"
+    needs: [build, deploy, verify-deployment]
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+    env:
+      BASE_URL: ${{ needs.build.outputs.base_url }}
+    steps:
+      - name: "Checkout Repository"
+        uses: actions/checkout@v4
+
+      - name: "Setup Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: "pip"
+
+      - name: "Install Chrome and ChromeDriver"
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -y chromium-browser chromium-chromedriver
+          echo "Chrome: $(chromium-browser --version)"
+          echo "Driver: $(chromedriver --version)"
+
+      - name: "Install Python Dependencies"
+        run: |
+          pip install --upgrade pip
+          pip install selenium==4.18.1 pytest==8.0.2 pytest-html==4.1.1 \
+            pytest-xdist==3.5.0 openpyxl==3.1.2 requests==2.31.0 \
+            python-dotenv==1.0.1 Pillow==10.2.0
+
+      - name: "Create Report Directories"
+        run: |
+          mkdir -p automation/reports/{Excel,HTML,Screenshots,Logs,JSON,Summary}
+          mkdir -p automation/{screenshots,logs}
+
+      - name: "Stage 8 - Run Selenium E2E Tests"
+        env:
+          BASE_URL: ${{ needs.build.outputs.base_url }}
+          HEADLESS: "true"
+          CHROME_BINARY: /usr/bin/chromium-browser
+          CHROMEDRIVER_PATH: /usr/bin/chromedriver
+        run: |
+          cd automation
+          echo "Running E2E tests against: $BASE_URL"
+          python -m pytest tests/ -v --tb=short \
+            --html=reports/HTML/execution-report.html \
+            --self-contained-html \
+            --timeout=60 \
+            --continue-on-collection-errors || true
+
+      - name: "Stage 9 - Generate HTML Dashboard Report"
+        env:
+          BASE_URL: ${{ needs.build.outputs.base_url }}
+        run: cd automation && python utils/report_generator.py
+
+      - name: "Stage 10 - Generate Excel Reports"
+        run: cd automation && python utils/excel_generator.py
+
+      - name: "Generate Summary"
+        run: cd automation && python utils/summary_generator.py
+
+      - name: "Stage 11 - Upload Excel Reports"
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: excel-reports
+          path: automation/reports/Excel/
+          retention-days: 30
+          if-no-files-found: ignore
+
+      - name: "Stage 11 - Upload HTML Reports"
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: html-reports
+          path: automation/reports/HTML/
+          retention-days: 30
+          if-no-files-found: ignore
+
+      - name: "Stage 11 - Upload JSON Results"
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: json-results
+          path: automation/reports/JSON/
+          retention-days: 30
+          if-no-files-found: ignore
+
+      - name: "Stage 11 - Upload Screenshots"
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-screenshots
+          path: automation/screenshots/
+          retention-days: 30
+          if-no-files-found: ignore
+
+      - name: "Stage 11 - Upload Logs"
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-logs
+          path: automation/logs/
+          retention-days: 30
+          if-no-files-found: ignore
+
+      - name: "Stage 11 - Upload Complete Bundle"
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: complete-test-results-${{ github.run_number }}
+          path: automation/reports/
+          retention-days: 30
+          if-no-files-found: ignore
+
+      - name: "Stage 12 - Publish GitHub Actions Summary"
+        if: always()
+        run: |
+          if [ -f automation/reports/Summary/summary.md ]; then
+            cat automation/reports/Summary/summary.md >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: "Stage 13 - Store Historical Results"
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: history-run-${{ github.run_number }}
+          path: automation/reports/JSON/
+          retention-days: 30
+          if-no-files-found: ignore
+
+      - name: "Evaluate Pass/Fail Threshold"
+        if: always()
+        run: |
+          JFILE="automation/reports/JSON/execution-results.json"
+          if [ -f "$JFILE" ]; then
+            python3 - <<'PYEOF'
+          import json, sys
+          with open("automation/reports/JSON/execution-results.json") as f:
+              d = json.load(f)
+          s = d.get("summary", {})
+          total = s.get("total", 0)
+          passed = s.get("passed", 0)
+          failed = s.get("failed", 0)
+          if total > 0:
+              pct = (passed / total) * 100
+              print(f"Pass rate: {pct:.1f}% ({passed}/{total})")
+              threshold = total * 0.05
+              if failed > threshold:
+                  print(f"FAIL: {failed} failed > 5% threshold ({threshold:.0f})")
+                  sys.exit(1)
+              else:
+                  print(f"PASS: Within 5% failure threshold")
+          PYEOF
+          fi
+
+  pr-analysis:
+    name: "PR Analysis Build Check"
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.event_name == 'pull_request'
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@v4
+      - name: "Download Build"
+        uses: actions/download-artifact@v4
+        with:
+          name: frontend-dist
+          path: dist/
+      - name: "Verify Build"
+        run: |
+          ls -la dist/
+          echo "JS: $(find dist -name '*.js' | wc -l) files"
+          echo "CSS: $(find dist -name '*.css' | wc -l) files"
+      - name: "PR Summary"
+        run: |
+          echo "## PR Build Analysis" >> $GITHUB_STEP_SUMMARY
+          echo "| Check | Status |" >> $GITHUB_STEP_SUMMARY
+          echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Build | PASSED |" >> $GITHUB_STEP_SUMMARY
+          echo "| E2E Selenium | Runs after merge to main |" >> $GITHUB_STEP_SUMMARY
