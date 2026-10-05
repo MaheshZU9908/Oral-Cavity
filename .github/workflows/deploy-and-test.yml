@@ -211,7 +211,7 @@ jobs:
         run: cd automation && python utils/report_generator.py
 
       - name: "Stage 10 - Generate Excel Reports"
-        run: cd automation && python utils/excel_generator.py
+        run: cd automation && python utils/excel_generator.py && python utils/generate_all_reports.py
 
       - name: "Generate Summary"
         run: cd automation && python utils/summary_generator.py

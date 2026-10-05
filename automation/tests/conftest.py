@@ -42,25 +42,21 @@ EXECUTION_RESULTS = {
 SESSION_START = time.time()
 
 
-# ── Driver Fixture (function-scoped) ──
-@pytest.fixture(scope="function")
+# ── Driver Fixture (module-scoped for high performance) ──
+@pytest.fixture(scope="module")
 def driver():
-    """Create a new WebDriver for each test."""
+    """Create a shared WebDriver for each test module for high-speed execution."""
     drv = create_driver()
-    logger.info(f"Driver started for test | BASE_URL={BASE_URL}")
+    logger.info(f"Driver started for test module | BASE_URL={BASE_URL}")
     yield drv
     quit_driver(drv)
 
 
 # ── Authenticated Driver Fixture ──
-@pytest.fixture(scope="function")
+@pytest.fixture(scope="module")
 def auth_driver(driver):
     """Driver with session token injected (bypasses actual login for speed)."""
-    from config.settings import VALID_EMAIL, VALID_PASSWORD
-    # Navigate first to establish domain
     driver.get(BASE_URL)
-    time.sleep(1)
-    # Inject a mock token for testing authenticated routes
     driver.execute_script(
         "localStorage.setItem('clinical_ai_token', 'test-mock-token-automation');"
     )
