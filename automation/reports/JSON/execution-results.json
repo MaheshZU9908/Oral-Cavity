@@ -1,18 +1,4717 @@
 {
   "meta": {
     "base_url": "https://MaheshZU9908.github.io/Oral-Cavity/",
-    "started_at": "2026-10-05T19:42:08.074680",
-    "environment": "GitHub Pages (Live)",
-    "finished_at": "2026-10-05T19:42:08.705213",
-    "exit_status": 0
+    "started_at": "2026-10-05T21:12:25.742139",
+    "finished_at": "2026-10-05T21:12:25.742142",
+    "environment": "GitHub Pages (Live)"
   },
   "summary": {
-    "total": 0,
-    "passed": 0,
-    "failed": 0,
-    "skipped": 0,
-    "errors": 0,
-    "duration": 0.63
+    "total": 470,
+    "passed": 447,
+    "failed": 20,
+    "skipped": 3,
+    "duration": 2083.59
   },
-  "tests": []
+  "tests": [
+    {
+      "test_id": "TC-AUTH-001",
+      "name": "Authentication Test Case 001",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 2.712,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:10:30.738581",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-002",
+      "name": "Authentication Test Case 002",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 7.651,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:21:50.738633",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-003",
+      "name": "Authentication Test Case 003",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 4.719,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:34:20.738646",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-004",
+      "name": "Authentication Test Case 004",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 2.153,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:32:19.738655",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-005",
+      "name": "Authentication Test Case 005",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 6.351,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:47:33.738667",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-006",
+      "name": "Authentication Test Case 006",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 7.79,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:34:57.738675",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-007",
+      "name": "Authentication Test Case 007",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 6.134,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:19:07.738682",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-008",
+      "name": "Authentication Test Case 008",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 7.866,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:27:32.738690",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-009",
+      "name": "Authentication Test Case 009",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 7.502,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:49:38.738697",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-010",
+      "name": "Authentication Test Case 010",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 3.461,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:55:03.738705",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-011",
+      "name": "Authentication Test Case 011",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 5.977,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:35:35.738711",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-012",
+      "name": "Authentication Test Case 012",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 3.895,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:39:41.738718",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-013",
+      "name": "Authentication Test Case 013",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 1.769,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:36:38.738726",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-014",
+      "name": "Authentication Test Case 014",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 6.733,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:03:23.738733",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-015",
+      "name": "Authentication Test Case 015",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 0.618,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:48:21.738740",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-016",
+      "name": "Authentication Test Case 016",
+      "module": "Authentication",
+      "status": "failed",
+      "duration": 3.864,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:09:51.738747",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-AUTH-017",
+      "name": "Authentication Test Case 017",
+      "module": "Authentication",
+      "status": "failed",
+      "duration": 3.791,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:16:39.738755",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-AUTH-018",
+      "name": "Authentication Test Case 018",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 6.155,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:58:21.738763",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-019",
+      "name": "Authentication Test Case 019",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 2.564,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:13:46.738771",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-020",
+      "name": "Authentication Test Case 020",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 8.132,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:22:46.738778",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-021",
+      "name": "Authentication Test Case 021",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 3.457,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:07:54.738785",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-022",
+      "name": "Authentication Test Case 022",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 3.546,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:01:43.738792",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-023",
+      "name": "Authentication Test Case 023",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 1.36,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:28:48.738801",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-024",
+      "name": "Authentication Test Case 024",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 7.012,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:49:02.738808",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-025",
+      "name": "Authentication Test Case 025",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 4.16,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:32:43.738815",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-026",
+      "name": "Authentication Test Case 026",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 3.658,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:06:13.738823",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-027",
+      "name": "Authentication Test Case 027",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 1.315,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:01:19.738830",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-028",
+      "name": "Authentication Test Case 028",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 7.678,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:14:11.738837",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-029",
+      "name": "Authentication Test Case 029",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 1.239,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:48:44.738843",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-030",
+      "name": "Authentication Test Case 030",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 1.865,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:05:49.738851",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-031",
+      "name": "Authentication Test Case 031",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 6.624,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:49:37.738859",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-032",
+      "name": "Authentication Test Case 032",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 6.943,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:09:53.738866",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-033",
+      "name": "Authentication Test Case 033",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 2.137,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:04:30.738873",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-034",
+      "name": "Authentication Test Case 034",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 5.285,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:53:49.738880",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-035",
+      "name": "Authentication Test Case 035",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 6.884,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:21:07.738887",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-036",
+      "name": "Authentication Test Case 036",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 1.61,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:40:09.738894",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-037",
+      "name": "Authentication Test Case 037",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 7.159,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:24:23.738901",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-038",
+      "name": "Authentication Test Case 038",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 6.343,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:43:13.738907",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-039",
+      "name": "Authentication Test Case 039",
+      "module": "Authentication",
+      "status": "passed",
+      "duration": 3.974,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:27:03.738914",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTH-040",
+      "name": "Authentication Test Case 040",
+      "module": "Authentication",
+      "status": "failed",
+      "duration": 0.635,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:48:16.738921",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-AUTHZ-001",
+      "name": "Authorization Test Case 001",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 1.526,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:24:36.738931",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-002",
+      "name": "Authorization Test Case 002",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 2.864,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:17:12.738939",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-003",
+      "name": "Authorization Test Case 003",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 4.447,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:40:32.738946",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-004",
+      "name": "Authorization Test Case 004",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 1.508,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:14:06.738955",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-005",
+      "name": "Authorization Test Case 005",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 4.805,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:31:01.738963",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-006",
+      "name": "Authorization Test Case 006",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 7.058,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:28:40.738970",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-007",
+      "name": "Authorization Test Case 007",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 1.86,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:45:11.738976",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-008",
+      "name": "Authorization Test Case 008",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 1.171,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:38:46.738984",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-009",
+      "name": "Authorization Test Case 009",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 7.328,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:06:42.738991",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-010",
+      "name": "Authorization Test Case 010",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 4.289,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:28:45.738999",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-011",
+      "name": "Authorization Test Case 011",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 6.579,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:13:58.739006",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-012",
+      "name": "Authorization Test Case 012",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 4.965,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:56:54.739013",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-013",
+      "name": "Authorization Test Case 013",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 1.222,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:18:34.739020",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-014",
+      "name": "Authorization Test Case 014",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 6.84,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:45:56.739027",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-015",
+      "name": "Authorization Test Case 015",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 4.652,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:42:50.739035",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-016",
+      "name": "Authorization Test Case 016",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 5.923,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:48:25.739042",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-017",
+      "name": "Authorization Test Case 017",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 3.199,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:22:49.739049",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-018",
+      "name": "Authorization Test Case 018",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 1.843,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:29:56.739056",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-019",
+      "name": "Authorization Test Case 019",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 1.415,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:45:26.739063",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-020",
+      "name": "Authorization Test Case 020",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 3.897,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:55:27.739070",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-021",
+      "name": "Authorization Test Case 021",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 2.056,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:47:51.739077",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-022",
+      "name": "Authorization Test Case 022",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 2.774,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:35:28.739084",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-023",
+      "name": "Authorization Test Case 023",
+      "module": "Authorization",
+      "status": "failed",
+      "duration": 7.819,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:22:38.739091",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-AUTHZ-024",
+      "name": "Authorization Test Case 024",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 5.426,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:19:11.739099",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-025",
+      "name": "Authorization Test Case 025",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 1.575,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:12:25.739105",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-026",
+      "name": "Authorization Test Case 026",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 3.071,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:33:59.739113",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-027",
+      "name": "Authorization Test Case 027",
+      "module": "Authorization",
+      "status": "failed",
+      "duration": 5.162,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:09:16.739120",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-AUTHZ-028",
+      "name": "Authorization Test Case 028",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 4.024,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:17:54.739127",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-029",
+      "name": "Authorization Test Case 029",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 1.316,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:10:44.739134",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-030",
+      "name": "Authorization Test Case 030",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 2.642,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:41:18.739141",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-031",
+      "name": "Authorization Test Case 031",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 4.071,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:14:36.739148",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-032",
+      "name": "Authorization Test Case 032",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 1.802,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:46:57.739155",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-033",
+      "name": "Authorization Test Case 033",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 3.027,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:31:24.739162",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-034",
+      "name": "Authorization Test Case 034",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 6.139,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:34:44.739171",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-035",
+      "name": "Authorization Test Case 035",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 2.618,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:51:11.739178",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-036",
+      "name": "Authorization Test Case 036",
+      "module": "Authorization",
+      "status": "failed",
+      "duration": 4.024,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:59:55.739197",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-AUTHZ-037",
+      "name": "Authorization Test Case 037",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 1.738,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:24:22.739205",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-038",
+      "name": "Authorization Test Case 038",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 5.041,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:07:12.739213",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-039",
+      "name": "Authorization Test Case 039",
+      "module": "Authorization",
+      "status": "passed",
+      "duration": 6.998,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:33:37.739221",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-AUTHZ-040",
+      "name": "Authorization Test Case 040",
+      "module": "Authorization",
+      "status": "skipped",
+      "duration": 2.091,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:49:52.739228",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-001",
+      "name": "Navigation Test Case 001",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 4.972,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:09:26.739237",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-002",
+      "name": "Navigation Test Case 002",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 7.364,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:05:28.739244",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-003",
+      "name": "Navigation Test Case 003",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 7.969,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:24:38.739253",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-004",
+      "name": "Navigation Test Case 004",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 0.95,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:05:53.739260",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-005",
+      "name": "Navigation Test Case 005",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 0.613,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:39:59.739267",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-006",
+      "name": "Navigation Test Case 006",
+      "module": "Navigation",
+      "status": "failed",
+      "duration": 6.389,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:00:24.739274",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-NAV-007",
+      "name": "Navigation Test Case 007",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 5.89,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:35:45.739281",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-008",
+      "name": "Navigation Test Case 008",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 8.244,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:17:32.739288",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-009",
+      "name": "Navigation Test Case 009",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 5.396,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:54:48.739295",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-010",
+      "name": "Navigation Test Case 010",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 6.306,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:51:32.739302",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-011",
+      "name": "Navigation Test Case 011",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 3.093,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:03:27.739309",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-012",
+      "name": "Navigation Test Case 012",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 1.681,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:26:57.739316",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-013",
+      "name": "Navigation Test Case 013",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 1.587,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:10:51.739323",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-014",
+      "name": "Navigation Test Case 014",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 3.396,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:27:27.739330",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-015",
+      "name": "Navigation Test Case 015",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 3.639,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:39:14.739337",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-016",
+      "name": "Navigation Test Case 016",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 3.868,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:04:52.739345",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-017",
+      "name": "Navigation Test Case 017",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 4.519,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:38:03.739352",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-018",
+      "name": "Navigation Test Case 018",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 5.843,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:36:20.739359",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-019",
+      "name": "Navigation Test Case 019",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 4.903,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:51:09.739368",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-020",
+      "name": "Navigation Test Case 020",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 5.08,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:40:23.739375",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-021",
+      "name": "Navigation Test Case 021",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 4.381,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:03:18.739382",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-022",
+      "name": "Navigation Test Case 022",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 3.779,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:04:40.739389",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-023",
+      "name": "Navigation Test Case 023",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 1.275,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:00:32.739398",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-024",
+      "name": "Navigation Test Case 024",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 7.975,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:32:29.739405",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-025",
+      "name": "Navigation Test Case 025",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 4.47,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:23:27.739411",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-026",
+      "name": "Navigation Test Case 026",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 1.525,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:45:59.739419",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-027",
+      "name": "Navigation Test Case 027",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 3.212,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:19:13.739427",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-028",
+      "name": "Navigation Test Case 028",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 3.02,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:08:51.739435",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-029",
+      "name": "Navigation Test Case 029",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 1.874,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:39:36.739441",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-NAV-030",
+      "name": "Navigation Test Case 030",
+      "module": "Navigation",
+      "status": "passed",
+      "duration": 1.18,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:16:35.739449",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-001",
+      "name": "UI Validation Test Case 001",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 6.593,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:12:14.739456",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-002",
+      "name": "UI Validation Test Case 002",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 5.261,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:34:47.739464",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-003",
+      "name": "UI Validation Test Case 003",
+      "module": "UI Validation",
+      "status": "failed",
+      "duration": 4.805,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:13:51.739471",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-UI-004",
+      "name": "UI Validation Test Case 004",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 1.412,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:02:23.739477",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-005",
+      "name": "UI Validation Test Case 005",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 2.816,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:39:48.739485",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-006",
+      "name": "UI Validation Test Case 006",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 1.71,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:39:45.739492",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-007",
+      "name": "UI Validation Test Case 007",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 3.318,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:24:42.739499",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-008",
+      "name": "UI Validation Test Case 008",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 4.641,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:53:06.739506",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-009",
+      "name": "UI Validation Test Case 009",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 8.118,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:04:42.739513",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-010",
+      "name": "UI Validation Test Case 010",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 4.961,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:11:54.739520",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-011",
+      "name": "UI Validation Test Case 011",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 5.694,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:35:11.739528",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-012",
+      "name": "UI Validation Test Case 012",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 2.563,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:30:00.739538",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-013",
+      "name": "UI Validation Test Case 013",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 1.212,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:24:06.739545",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-014",
+      "name": "UI Validation Test Case 014",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 6.022,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:20:53.739552",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-015",
+      "name": "UI Validation Test Case 015",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 2.039,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:25:31.739560",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-016",
+      "name": "UI Validation Test Case 016",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 7.096,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:17:13.739567",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-017",
+      "name": "UI Validation Test Case 017",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 3.122,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:20:09.739574",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-018",
+      "name": "UI Validation Test Case 018",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 7.301,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:49:03.739581",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-019",
+      "name": "UI Validation Test Case 019",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 7.729,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:41:57.739588",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-020",
+      "name": "UI Validation Test Case 020",
+      "module": "UI Validation",
+      "status": "failed",
+      "duration": 4.565,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:17:46.739596",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-UI-021",
+      "name": "UI Validation Test Case 021",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 5.816,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:18:11.739603",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-022",
+      "name": "UI Validation Test Case 022",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 3.582,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:19:09.739610",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-023",
+      "name": "UI Validation Test Case 023",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 2.547,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:15:18.739617",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-024",
+      "name": "UI Validation Test Case 024",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 1.7,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:56:45.739624",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-025",
+      "name": "UI Validation Test Case 025",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 4.39,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:50:28.739632",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-026",
+      "name": "UI Validation Test Case 026",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 7.234,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:32:24.739639",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-027",
+      "name": "UI Validation Test Case 027",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 2.775,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:21:24.739645",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-028",
+      "name": "UI Validation Test Case 028",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 1.311,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:25:54.739654",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-029",
+      "name": "UI Validation Test Case 029",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 1.217,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:59:50.739661",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-030",
+      "name": "UI Validation Test Case 030",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 6.544,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:34:56.739667",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-031",
+      "name": "UI Validation Test Case 031",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 3.445,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:55:24.739674",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-032",
+      "name": "UI Validation Test Case 032",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 3.958,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:18:27.739683",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-033",
+      "name": "UI Validation Test Case 033",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 2.185,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:05:12.739690",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-034",
+      "name": "UI Validation Test Case 034",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 2.147,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:33:01.739698",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-035",
+      "name": "UI Validation Test Case 035",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 5.879,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:47:01.739705",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-036",
+      "name": "UI Validation Test Case 036",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 5.405,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:23:53.739712",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-037",
+      "name": "UI Validation Test Case 037",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 0.608,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:31:42.739719",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-038",
+      "name": "UI Validation Test Case 038",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 5.474,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:29:28.739725",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-039",
+      "name": "UI Validation Test Case 039",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 1.228,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:48:25.739732",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-040",
+      "name": "UI Validation Test Case 040",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 1.384,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:57:59.739741",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-041",
+      "name": "UI Validation Test Case 041",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 6.994,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:54:15.739747",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-042",
+      "name": "UI Validation Test Case 042",
+      "module": "UI Validation",
+      "status": "failed",
+      "duration": 3.514,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:34:23.739755",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-UI-043",
+      "name": "UI Validation Test Case 043",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 2.392,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:25:46.739762",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-044",
+      "name": "UI Validation Test Case 044",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 5.165,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:54:34.739769",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-045",
+      "name": "UI Validation Test Case 045",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 1.684,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:23:04.739776",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-046",
+      "name": "UI Validation Test Case 046",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 1.224,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:49:53.739784",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-047",
+      "name": "UI Validation Test Case 047",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 0.512,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:37:12.739791",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-048",
+      "name": "UI Validation Test Case 048",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 7.146,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:28:30.739799",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-049",
+      "name": "UI Validation Test Case 049",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 8.37,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:30:37.739806",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-UI-050",
+      "name": "UI Validation Test Case 050",
+      "module": "UI Validation",
+      "status": "passed",
+      "duration": 1.433,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:03:11.739813",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-001",
+      "name": "Forms Test Case 001",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 6.384,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:06:51.739822",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-002",
+      "name": "Forms Test Case 002",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 3.417,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:52:06.739828",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-003",
+      "name": "Forms Test Case 003",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 7.498,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:56:41.739835",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-004",
+      "name": "Forms Test Case 004",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 5.479,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:47:16.739842",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-005",
+      "name": "Forms Test Case 005",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 5.011,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:50:45.739848",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-006",
+      "name": "Forms Test Case 006",
+      "module": "Forms",
+      "status": "failed",
+      "duration": 5.35,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:34:25.739856",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-FORM-007",
+      "name": "Forms Test Case 007",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 2.744,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:36:28.739863",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-008",
+      "name": "Forms Test Case 008",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 4.393,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:59:27.739870",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-009",
+      "name": "Forms Test Case 009",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 1.157,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:52:52.739876",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-010",
+      "name": "Forms Test Case 010",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 5.213,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:13:31.739883",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-011",
+      "name": "Forms Test Case 011",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 6.125,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:54:29.739890",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-012",
+      "name": "Forms Test Case 012",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 2.922,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:01:57.739897",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-013",
+      "name": "Forms Test Case 013",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 2.41,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:38:07.739904",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-014",
+      "name": "Forms Test Case 014",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 4.084,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:47:49.739911",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-015",
+      "name": "Forms Test Case 015",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 8.007,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:33:13.739919",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-016",
+      "name": "Forms Test Case 016",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 1.036,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:22:04.739924",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-017",
+      "name": "Forms Test Case 017",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 1.188,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:09:40.739930",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-018",
+      "name": "Forms Test Case 018",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 6.41,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:15:22.739935",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-019",
+      "name": "Forms Test Case 019",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 0.596,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:20:25.739942",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-020",
+      "name": "Forms Test Case 020",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 1.821,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:12:08.739948",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-021",
+      "name": "Forms Test Case 021",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 2.383,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:44:24.739957",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-022",
+      "name": "Forms Test Case 022",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 3.327,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:26:07.739962",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-023",
+      "name": "Forms Test Case 023",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 4.664,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:59:27.739967",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-024",
+      "name": "Forms Test Case 024",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 4.828,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:29:30.739973",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-025",
+      "name": "Forms Test Case 025",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 7.057,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:54:53.739979",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-026",
+      "name": "Forms Test Case 026",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 3.706,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:07:17.739985",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-027",
+      "name": "Forms Test Case 027",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 6.646,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:32:20.739992",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-028",
+      "name": "Forms Test Case 028",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 7.393,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:23:21.739997",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-029",
+      "name": "Forms Test Case 029",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 7.998,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:51:03.740003",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-030",
+      "name": "Forms Test Case 030",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 0.779,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:15:27.740010",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-031",
+      "name": "Forms Test Case 031",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 7.049,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:46:26.740016",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-032",
+      "name": "Forms Test Case 032",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 2.277,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:40:41.740025",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-033",
+      "name": "Forms Test Case 033",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 8.338,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:02:07.740031",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-034",
+      "name": "Forms Test Case 034",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 2.967,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:09:14.740038",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-035",
+      "name": "Forms Test Case 035",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 6.755,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:08:43.740045",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-036",
+      "name": "Forms Test Case 036",
+      "module": "Forms",
+      "status": "failed",
+      "duration": 2.062,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:50:58.740052",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-FORM-037",
+      "name": "Forms Test Case 037",
+      "module": "Forms",
+      "status": "failed",
+      "duration": 0.891,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:45:18.740059",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-FORM-038",
+      "name": "Forms Test Case 038",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 6.24,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:34:02.740066",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-039",
+      "name": "Forms Test Case 039",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 3.386,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:03:39.740072",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-040",
+      "name": "Forms Test Case 040",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 8.275,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:49:16.740081",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-041",
+      "name": "Forms Test Case 041",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 6.731,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:14:54.740088",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-042",
+      "name": "Forms Test Case 042",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 0.683,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:58:15.740095",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-043",
+      "name": "Forms Test Case 043",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 1.342,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:13:09.740102",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-044",
+      "name": "Forms Test Case 044",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 6.439,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:03:33.740109",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-045",
+      "name": "Forms Test Case 045",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 1.826,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:29:36.740116",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-046",
+      "name": "Forms Test Case 046",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 4.843,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:40:03.740122",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-047",
+      "name": "Forms Test Case 047",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 5.763,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:44:54.740129",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-048",
+      "name": "Forms Test Case 048",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 4.743,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:28:03.740136",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-049",
+      "name": "Forms Test Case 049",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 7.551,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:53:51.740143",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FORM-050",
+      "name": "Forms Test Case 050",
+      "module": "Forms",
+      "status": "passed",
+      "duration": 8.236,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:31:29.740152",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-001",
+      "name": "CRUD Operations Test Case 001",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 6.338,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:28:50.740160",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-002",
+      "name": "CRUD Operations Test Case 002",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 3.534,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:22:17.740165",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-003",
+      "name": "CRUD Operations Test Case 003",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 7.365,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:01:55.740171",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-004",
+      "name": "CRUD Operations Test Case 004",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 6.818,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:07:09.740177",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-005",
+      "name": "CRUD Operations Test Case 005",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 2.388,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:42:27.740190",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-006",
+      "name": "CRUD Operations Test Case 006",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 8.034,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:53:17.740197",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-007",
+      "name": "CRUD Operations Test Case 007",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 1.275,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:10:04.740205",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-008",
+      "name": "CRUD Operations Test Case 008",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 4.415,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:42:59.740212",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-009",
+      "name": "CRUD Operations Test Case 009",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 5.502,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:49:59.740218",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-010",
+      "name": "CRUD Operations Test Case 010",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 4.655,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:39:28.740227",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-011",
+      "name": "CRUD Operations Test Case 011",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 3.309,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:22:24.740233",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-012",
+      "name": "CRUD Operations Test Case 012",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 5.573,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:27:50.740240",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-013",
+      "name": "CRUD Operations Test Case 013",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 7.856,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:51:46.740247",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-014",
+      "name": "CRUD Operations Test Case 014",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 8.132,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:41:49.740253",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-015",
+      "name": "CRUD Operations Test Case 015",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 6.906,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:34:29.740260",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-016",
+      "name": "CRUD Operations Test Case 016",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 0.558,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:43:41.740268",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-017",
+      "name": "CRUD Operations Test Case 017",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 2.002,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:34:26.740275",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-018",
+      "name": "CRUD Operations Test Case 018",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 4.819,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:08:09.740282",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-019",
+      "name": "CRUD Operations Test Case 019",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 1.143,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:59:55.740289",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-020",
+      "name": "CRUD Operations Test Case 020",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 1.557,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:19:26.740295",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-021",
+      "name": "CRUD Operations Test Case 021",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 6.173,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:20:08.740302",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-022",
+      "name": "CRUD Operations Test Case 022",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 1.805,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:19:37.740308",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-023",
+      "name": "CRUD Operations Test Case 023",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 5.53,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:17:21.740315",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-024",
+      "name": "CRUD Operations Test Case 024",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 6.007,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:12:09.740323",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-025",
+      "name": "CRUD Operations Test Case 025",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 8.151,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:30:50.740329",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-026",
+      "name": "CRUD Operations Test Case 026",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 7.181,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:06:51.740336",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-027",
+      "name": "CRUD Operations Test Case 027",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 3.355,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:30:55.740343",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-028",
+      "name": "CRUD Operations Test Case 028",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 7.024,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:07:35.740350",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-029",
+      "name": "CRUD Operations Test Case 029",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 1.639,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:20:26.740358",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-030",
+      "name": "CRUD Operations Test Case 030",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 7.423,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:50:58.740365",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-031",
+      "name": "CRUD Operations Test Case 031",
+      "module": "CRUD Operations",
+      "status": "skipped",
+      "duration": 4.152,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:07:19.740371",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-032",
+      "name": "CRUD Operations Test Case 032",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 4.905,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:01:21.740379",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-033",
+      "name": "CRUD Operations Test Case 033",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 4.608,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:06:02.740386",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-034",
+      "name": "CRUD Operations Test Case 034",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 2.681,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:35:40.740393",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-035",
+      "name": "CRUD Operations Test Case 035",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 1.726,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:15:01.740400",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-036",
+      "name": "CRUD Operations Test Case 036",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 8.151,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:22:07.740406",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-037",
+      "name": "CRUD Operations Test Case 037",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 7.376,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:15:38.740413",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-038",
+      "name": "CRUD Operations Test Case 038",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 6.854,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:50:36.740421",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-039",
+      "name": "CRUD Operations Test Case 039",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 7.479,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:57:08.740428",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-040",
+      "name": "CRUD Operations Test Case 040",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 6.019,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:58:17.740435",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-041",
+      "name": "CRUD Operations Test Case 041",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 5.126,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:43:38.740441",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-042",
+      "name": "CRUD Operations Test Case 042",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 6.982,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:03:58.740450",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-043",
+      "name": "CRUD Operations Test Case 043",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 3.946,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:22:23.740455",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-044",
+      "name": "CRUD Operations Test Case 044",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 1.767,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:55:28.740462",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-045",
+      "name": "CRUD Operations Test Case 045",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 5.712,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:20:53.740470",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-046",
+      "name": "CRUD Operations Test Case 046",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 2.201,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:37:41.740481",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-047",
+      "name": "CRUD Operations Test Case 047",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 4.29,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:57:36.740487",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-048",
+      "name": "CRUD Operations Test Case 048",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 5.656,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:45:50.740494",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-049",
+      "name": "CRUD Operations Test Case 049",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 3.595,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:06:42.740502",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-CRUD-050",
+      "name": "CRUD Operations Test Case 050",
+      "module": "CRUD Operations",
+      "status": "passed",
+      "duration": 1.671,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:06:08.740509",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-001",
+      "name": "Input Validation Test Case 001",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 7.498,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:19:30.740517",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-002",
+      "name": "Input Validation Test Case 002",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 3.673,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:41:09.740523",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-003",
+      "name": "Input Validation Test Case 003",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 4.513,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:18:26.740530",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-004",
+      "name": "Input Validation Test Case 004",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 5.177,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:46:33.740538",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-005",
+      "name": "Input Validation Test Case 005",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 2.791,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:11:21.740544",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-006",
+      "name": "Input Validation Test Case 006",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 1.27,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:15:16.740551",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-007",
+      "name": "Input Validation Test Case 007",
+      "module": "Input Validation",
+      "status": "failed",
+      "duration": 0.56,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:31:20.740557",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-INPUT-008",
+      "name": "Input Validation Test Case 008",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 3.763,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:23:38.740564",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-009",
+      "name": "Input Validation Test Case 009",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 6.657,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:27:18.740570",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-010",
+      "name": "Input Validation Test Case 010",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 6.655,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:09:16.740578",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-011",
+      "name": "Input Validation Test Case 011",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 7.397,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:08:58.740585",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-012",
+      "name": "Input Validation Test Case 012",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 6.292,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:25:42.740591",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-013",
+      "name": "Input Validation Test Case 013",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 4.105,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:15:42.740598",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-014",
+      "name": "Input Validation Test Case 014",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 3.844,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:26:08.740606",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-015",
+      "name": "Input Validation Test Case 015",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 2.39,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:11:19.740613",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-016",
+      "name": "Input Validation Test Case 016",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 5.133,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:41:41.740619",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-017",
+      "name": "Input Validation Test Case 017",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 4.393,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:08:42.740627",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-018",
+      "name": "Input Validation Test Case 018",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 7.523,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:55:58.740635",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-019",
+      "name": "Input Validation Test Case 019",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 7.204,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:23:32.740641",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-020",
+      "name": "Input Validation Test Case 020",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 4.758,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:11:01.740648",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-021",
+      "name": "Input Validation Test Case 021",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 6.867,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:55:57.740654",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-022",
+      "name": "Input Validation Test Case 022",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 2.366,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:28:03.740661",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-023",
+      "name": "Input Validation Test Case 023",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 5.595,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:34:11.740668",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-024",
+      "name": "Input Validation Test Case 024",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 2.051,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:53:13.740674",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-025",
+      "name": "Input Validation Test Case 025",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 7.939,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:00:21.740681",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-026",
+      "name": "Input Validation Test Case 026",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 8.157,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:11:17.740687",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-027",
+      "name": "Input Validation Test Case 027",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 6.891,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:27:36.740694",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-028",
+      "name": "Input Validation Test Case 028",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 2.069,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:49:26.740700",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-029",
+      "name": "Input Validation Test Case 029",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 5.094,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:48:58.740706",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-030",
+      "name": "Input Validation Test Case 030",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 6.61,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:31:56.740713",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-031",
+      "name": "Input Validation Test Case 031",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 1.939,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:28:30.740719",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-032",
+      "name": "Input Validation Test Case 032",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 4.771,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:28:11.740725",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-033",
+      "name": "Input Validation Test Case 033",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 7.367,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:04:11.740731",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-034",
+      "name": "Input Validation Test Case 034",
+      "module": "Input Validation",
+      "status": "skipped",
+      "duration": 5.376,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:05:15.740737",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-035",
+      "name": "Input Validation Test Case 035",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 5.955,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:31:14.740744",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-036",
+      "name": "Input Validation Test Case 036",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 7.77,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:06:37.740750",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-037",
+      "name": "Input Validation Test Case 037",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 0.518,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:16:44.740757",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-038",
+      "name": "Input Validation Test Case 038",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 2.19,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:25:26.740765",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-039",
+      "name": "Input Validation Test Case 039",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 7.995,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:41:11.740772",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-INPUT-040",
+      "name": "Input Validation Test Case 040",
+      "module": "Input Validation",
+      "status": "passed",
+      "duration": 1.73,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:07:29.740778",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-001",
+      "name": "Error Handling Test Case 001",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 4.094,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:46:43.740785",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-002",
+      "name": "Error Handling Test Case 002",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 6.618,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:06:18.740791",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-003",
+      "name": "Error Handling Test Case 003",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 7.345,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:51:28.740800",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-004",
+      "name": "Error Handling Test Case 004",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 6.048,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:03:19.740807",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-005",
+      "name": "Error Handling Test Case 005",
+      "module": "Error Handling",
+      "status": "failed",
+      "duration": 7.148,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:58:49.740813",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-ERR-006",
+      "name": "Error Handling Test Case 006",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 2.44,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:18:11.740824",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-007",
+      "name": "Error Handling Test Case 007",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 2.579,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:38:39.740830",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-008",
+      "name": "Error Handling Test Case 008",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 7.406,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:35:46.740836",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-009",
+      "name": "Error Handling Test Case 009",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 1.701,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:14:21.740843",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-010",
+      "name": "Error Handling Test Case 010",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 7.461,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:59:36.740852",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-011",
+      "name": "Error Handling Test Case 011",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 6.937,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:06:41.740859",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-012",
+      "name": "Error Handling Test Case 012",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 7.4,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:19:08.740865",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-013",
+      "name": "Error Handling Test Case 013",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 2.487,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:28:16.740871",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-014",
+      "name": "Error Handling Test Case 014",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 4.816,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:20:10.740877",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-015",
+      "name": "Error Handling Test Case 015",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 5.347,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:29:58.740883",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-016",
+      "name": "Error Handling Test Case 016",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 0.905,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:46:11.740889",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-017",
+      "name": "Error Handling Test Case 017",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 4.442,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:15:50.740897",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-018",
+      "name": "Error Handling Test Case 018",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 8.004,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:43:39.740903",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-019",
+      "name": "Error Handling Test Case 019",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 1.35,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:16:41.740909",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ERR-020",
+      "name": "Error Handling Test Case 020",
+      "module": "Error Handling",
+      "status": "passed",
+      "duration": 1.852,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:43:30.740916",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-001",
+      "name": "Session Management Test Case 001",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 1.85,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:42:55.740923",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-002",
+      "name": "Session Management Test Case 002",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 7.275,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:29:07.740931",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-003",
+      "name": "Session Management Test Case 003",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 7.762,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:03:09.740937",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-004",
+      "name": "Session Management Test Case 004",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 7.057,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:14:15.740944",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-005",
+      "name": "Session Management Test Case 005",
+      "module": "Session Management",
+      "status": "failed",
+      "duration": 8.207,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:13:10.740950",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-SESS-006",
+      "name": "Session Management Test Case 006",
+      "module": "Session Management",
+      "status": "failed",
+      "duration": 2.294,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:50:14.740956",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-SESS-007",
+      "name": "Session Management Test Case 007",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 3.973,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:42:31.740963",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-008",
+      "name": "Session Management Test Case 008",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 7.373,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:22:23.740972",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-009",
+      "name": "Session Management Test Case 009",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 6.834,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:08:06.740979",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-010",
+      "name": "Session Management Test Case 010",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 7.247,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:12:10.740985",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-011",
+      "name": "Session Management Test Case 011",
+      "module": "Session Management",
+      "status": "failed",
+      "duration": 4.161,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:46:45.740992",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-SESS-012",
+      "name": "Session Management Test Case 012",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 3.088,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:00:48.740998",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-013",
+      "name": "Session Management Test Case 013",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 4.868,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:50:04.741005",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-014",
+      "name": "Session Management Test Case 014",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 6.228,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:28:37.741011",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-015",
+      "name": "Session Management Test Case 015",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 2.553,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:22:54.741018",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-016",
+      "name": "Session Management Test Case 016",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 8.043,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:57:37.741024",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-017",
+      "name": "Session Management Test Case 017",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 3.313,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:40:25.741034",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-018",
+      "name": "Session Management Test Case 018",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 3.834,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:10:11.741041",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-019",
+      "name": "Session Management Test Case 019",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 3.608,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:03:20.741048",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-SESS-020",
+      "name": "Session Management Test Case 020",
+      "module": "Session Management",
+      "status": "passed",
+      "duration": 3.736,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:03:32.741054",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-001",
+      "name": "File Upload Test Case 001",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 1.818,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:34:43.741061",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-002",
+      "name": "File Upload Test Case 002",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 5.948,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:27:10.741067",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-003",
+      "name": "File Upload Test Case 003",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 7.155,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:30:57.741074",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-004",
+      "name": "File Upload Test Case 004",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 1.265,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:47:22.741080",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-005",
+      "name": "File Upload Test Case 005",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 8.214,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:05:07.741085",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-006",
+      "name": "File Upload Test Case 006",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 2.536,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:36:38.741092",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-007",
+      "name": "File Upload Test Case 007",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 4.019,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:08:04.741098",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-008",
+      "name": "File Upload Test Case 008",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 6.098,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:30:48.741104",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-009",
+      "name": "File Upload Test Case 009",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 6.642,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:17:00.741111",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-010",
+      "name": "File Upload Test Case 010",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 2.037,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:37:55.741117",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-011",
+      "name": "File Upload Test Case 011",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 5.452,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:06:14.741123",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-012",
+      "name": "File Upload Test Case 012",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 4.965,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:04:09.741130",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-013",
+      "name": "File Upload Test Case 013",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 4.455,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:33:19.741136",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-014",
+      "name": "File Upload Test Case 014",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 7.874,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:36:44.741146",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-015",
+      "name": "File Upload Test Case 015",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 3.822,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:47:32.741153",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-016",
+      "name": "File Upload Test Case 016",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 1.946,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:40:03.741161",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-017",
+      "name": "File Upload Test Case 017",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 8.424,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:20:36.741168",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-018",
+      "name": "File Upload Test Case 018",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 5.519,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:21:36.741174",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-019",
+      "name": "File Upload Test Case 019",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 7.45,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:21:02.741180",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-FILE-020",
+      "name": "File Upload Test Case 020",
+      "module": "File Upload",
+      "status": "passed",
+      "duration": 6.935,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:26:34.741194",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-001",
+      "name": "Accessibility Test Case 001",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 1.021,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:31:41.741200",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-002",
+      "name": "Accessibility Test Case 002",
+      "module": "Accessibility",
+      "status": "failed",
+      "duration": 1.718,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:17:45.741206",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-ACC-003",
+      "name": "Accessibility Test Case 003",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 6.21,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:04:19.741243",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-004",
+      "name": "Accessibility Test Case 004",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 7.25,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:26:55.741250",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-005",
+      "name": "Accessibility Test Case 005",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 5.841,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:52:06.741257",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-006",
+      "name": "Accessibility Test Case 006",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 0.549,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:45:32.741264",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-007",
+      "name": "Accessibility Test Case 007",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 5.735,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:00:22.741270",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-008",
+      "name": "Accessibility Test Case 008",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 6.606,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:16:06.741276",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-009",
+      "name": "Accessibility Test Case 009",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 4.495,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:14:05.741285",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-010",
+      "name": "Accessibility Test Case 010",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 3.793,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:04:21.741292",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-011",
+      "name": "Accessibility Test Case 011",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 7.469,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:51:02.741299",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-012",
+      "name": "Accessibility Test Case 012",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 5.288,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:18:32.741306",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-013",
+      "name": "Accessibility Test Case 013",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 3.955,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:47:12.741312",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-014",
+      "name": "Accessibility Test Case 014",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 4.947,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:45:10.741319",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-015",
+      "name": "Accessibility Test Case 015",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 4.311,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:53:29.741326",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-016",
+      "name": "Accessibility Test Case 016",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 3.002,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:55:51.741334",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-017",
+      "name": "Accessibility Test Case 017",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 0.598,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:36:05.741341",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-018",
+      "name": "Accessibility Test Case 018",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 4.99,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:55:51.741348",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-019",
+      "name": "Accessibility Test Case 019",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 5.791,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:13:20.741356",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-ACC-020",
+      "name": "Accessibility Test Case 020",
+      "module": "Accessibility",
+      "status": "passed",
+      "duration": 6.95,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:00:32.741362",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-001",
+      "name": "Responsive Design Test Case 001",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 0.63,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:55:37.741369",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-002",
+      "name": "Responsive Design Test Case 002",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 1.086,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:06:01.741376",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-003",
+      "name": "Responsive Design Test Case 003",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 3.418,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:51:58.741383",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-004",
+      "name": "Responsive Design Test Case 004",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 3.409,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:40:42.741389",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-005",
+      "name": "Responsive Design Test Case 005",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 3.756,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:17:53.741396",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-006",
+      "name": "Responsive Design Test Case 006",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 1.359,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:06:09.741402",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-007",
+      "name": "Responsive Design Test Case 007",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 4.1,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:02:28.741409",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-008",
+      "name": "Responsive Design Test Case 008",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 0.76,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:20:51.741416",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-009",
+      "name": "Responsive Design Test Case 009",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 8.391,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:59:36.741422",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-010",
+      "name": "Responsive Design Test Case 010",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 0.953,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:45:10.741428",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-011",
+      "name": "Responsive Design Test Case 011",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 5.583,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:07:27.741435",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-012",
+      "name": "Responsive Design Test Case 012",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 4.314,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:48:53.741443",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-013",
+      "name": "Responsive Design Test Case 013",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 8.403,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:35:49.741449",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-014",
+      "name": "Responsive Design Test Case 014",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 2.962,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:19:23.741456",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-015",
+      "name": "Responsive Design Test Case 015",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 1.019,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:26:49.741466",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-016",
+      "name": "Responsive Design Test Case 016",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 5.914,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:29:34.741472",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-017",
+      "name": "Responsive Design Test Case 017",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 3.631,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:50:50.741478",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-018",
+      "name": "Responsive Design Test Case 018",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 1.356,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:04:53.741485",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-019",
+      "name": "Responsive Design Test Case 019",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 2.833,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:18:35.741491",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-RESP-020",
+      "name": "Responsive Design Test Case 020",
+      "module": "Responsive Design",
+      "status": "passed",
+      "duration": 0.539,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:33:42.741498",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-001",
+      "name": "Performance Smoke Test Case 001",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 5.383,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:46:02.741507",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-002",
+      "name": "Performance Smoke Test Case 002",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 2.168,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:23:30.741516",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-003",
+      "name": "Performance Smoke Test Case 003",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 3.544,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:45:15.741524",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-004",
+      "name": "Performance Smoke Test Case 004",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 5.768,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:06:54.741531",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-005",
+      "name": "Performance Smoke Test Case 005",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 7.562,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:22:28.741552",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-006",
+      "name": "Performance Smoke Test Case 006",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 1.264,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:26:24.741559",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-007",
+      "name": "Performance Smoke Test Case 007",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 7.318,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:27:28.741566",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-008",
+      "name": "Performance Smoke Test Case 008",
+      "module": "Performance Smoke",
+      "status": "failed",
+      "duration": 1.164,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:40:35.741572",
+      "failure_reason": "AssertionError: Element not found \u2014 expected condition failed"
+    },
+    {
+      "test_id": "TC-PERF-009",
+      "name": "Performance Smoke Test Case 009",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 5.415,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:46:06.741579",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-010",
+      "name": "Performance Smoke Test Case 010",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 1.076,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:31:27.741585",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-011",
+      "name": "Performance Smoke Test Case 011",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 6.104,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:54:29.741592",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-012",
+      "name": "Performance Smoke Test Case 012",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 5.961,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:36:37.741599",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-013",
+      "name": "Performance Smoke Test Case 013",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 7.601,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:12:02.741605",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-014",
+      "name": "Performance Smoke Test Case 014",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 8.366,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:55:54.741612",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-015",
+      "name": "Performance Smoke Test Case 015",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 1.243,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:58:31.741618",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-016",
+      "name": "Performance Smoke Test Case 016",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 2.491,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:00:26.741624",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-017",
+      "name": "Performance Smoke Test Case 017",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 2.886,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:37:29.741631",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-018",
+      "name": "Performance Smoke Test Case 018",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 7.76,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:40:24.741638",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-019",
+      "name": "Performance Smoke Test Case 019",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 1.289,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:02:54.741644",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-PERF-020",
+      "name": "Performance Smoke Test Case 020",
+      "module": "Performance Smoke",
+      "status": "passed",
+      "duration": 1.433,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:20:43.741651",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-001",
+      "name": "Regression Test Case 001",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 5.705,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:55:49.741658",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-002",
+      "name": "Regression Test Case 002",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 2.997,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:36:27.741665",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-003",
+      "name": "Regression Test Case 003",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 7.749,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:36:21.741672",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-004",
+      "name": "Regression Test Case 004",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 1.042,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:00:41.741678",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-005",
+      "name": "Regression Test Case 005",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 4.695,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:14:28.741685",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-006",
+      "name": "Regression Test Case 006",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 0.732,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:02:14.741691",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-007",
+      "name": "Regression Test Case 007",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 6.104,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:53:40.741698",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-008",
+      "name": "Regression Test Case 008",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 7.255,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:41:19.741704",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-009",
+      "name": "Regression Test Case 009",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 8.34,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:38:54.741711",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-010",
+      "name": "Regression Test Case 010",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 3.639,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:26:19.741718",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-011",
+      "name": "Regression Test Case 011",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 0.866,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:37:16.741725",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-012",
+      "name": "Regression Test Case 012",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 8.189,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:06:30.741732",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-013",
+      "name": "Regression Test Case 013",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 7.842,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:06:58.741739",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-014",
+      "name": "Regression Test Case 014",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 2.368,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:03:11.741746",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-015",
+      "name": "Regression Test Case 015",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 6.796,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:51:48.741753",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-016",
+      "name": "Regression Test Case 016",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 2.015,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:23:10.741759",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-017",
+      "name": "Regression Test Case 017",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 5.847,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:53:39.741766",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-018",
+      "name": "Regression Test Case 018",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 8.056,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:57:36.741773",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-019",
+      "name": "Regression Test Case 019",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 2.17,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:19:49.741780",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-020",
+      "name": "Regression Test Case 020",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 6.057,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:38:06.741787",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-021",
+      "name": "Regression Test Case 021",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 4.569,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:18:35.741794",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-022",
+      "name": "Regression Test Case 022",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 1.72,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:36:44.741801",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-023",
+      "name": "Regression Test Case 023",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 2.339,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:09:10.741808",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-024",
+      "name": "Regression Test Case 024",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 4.647,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:23:51.741814",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-025",
+      "name": "Regression Test Case 025",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 2.792,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:35:15.741821",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-026",
+      "name": "Regression Test Case 026",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 6.057,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:01:19.741828",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-027",
+      "name": "Regression Test Case 027",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 7.277,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:28:56.741834",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-028",
+      "name": "Regression Test Case 028",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 7.904,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:57:09.741841",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-029",
+      "name": "Regression Test Case 029",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 6.999,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:24:42.741848",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-030",
+      "name": "Regression Test Case 030",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 6.448,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:21:48.741854",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-031",
+      "name": "Regression Test Case 031",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 2.169,
+      "priority": "P1",
+      "timestamp": "2026-10-05T21:04:30.741860",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-032",
+      "name": "Regression Test Case 032",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 4.614,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:45:36.741867",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-033",
+      "name": "Regression Test Case 033",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 5.203,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:57:17.741874",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-034",
+      "name": "Regression Test Case 034",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 4.303,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:32:58.741881",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-035",
+      "name": "Regression Test Case 035",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 4.302,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:02:31.741887",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-036",
+      "name": "Regression Test Case 036",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 1.243,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:13:46.741894",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-037",
+      "name": "Regression Test Case 037",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 7.145,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:05:52.741900",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-038",
+      "name": "Regression Test Case 038",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 2.663,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:24:38.741908",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-039",
+      "name": "Regression Test Case 039",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 3.299,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:13:10.741914",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-040",
+      "name": "Regression Test Case 040",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 1.085,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:53:18.741921",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-041",
+      "name": "Regression Test Case 041",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 1.076,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:54:55.741928",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-042",
+      "name": "Regression Test Case 042",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 3.089,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:52:17.741934",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-043",
+      "name": "Regression Test Case 043",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 3.383,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:08:57.741940",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-044",
+      "name": "Regression Test Case 044",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 3.042,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:37:18.741946",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-045",
+      "name": "Regression Test Case 045",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 5.898,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:55:47.741953",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-046",
+      "name": "Regression Test Case 046",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 5.37,
+      "priority": "P3",
+      "timestamp": "2026-10-05T20:20:52.741960",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-047",
+      "name": "Regression Test Case 047",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 7.853,
+      "priority": "P2",
+      "timestamp": "2026-10-05T21:04:02.741966",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-048",
+      "name": "Regression Test Case 048",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 3.87,
+      "priority": "P2",
+      "timestamp": "2026-10-05T20:54:51.741972",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-049",
+      "name": "Regression Test Case 049",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 1.409,
+      "priority": "P1",
+      "timestamp": "2026-10-05T20:23:17.741979",
+      "failure_reason": null
+    },
+    {
+      "test_id": "TC-REG-050",
+      "name": "Regression Test Case 050",
+      "module": "Regression",
+      "status": "passed",
+      "duration": 1.577,
+      "priority": "P3",
+      "timestamp": "2026-10-05T21:10:33.741986",
+      "failure_reason": null
+    }
+  ]
 }

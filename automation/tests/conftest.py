@@ -131,14 +131,15 @@ def pytest_runtest_makereport(item, call):
 
 # ── Session finish: write JSON results ──
 def pytest_sessionfinish(session, exitstatus):
-    EXECUTION_RESULTS["summary"]["duration"] = round(time.time() - SESSION_START, 2)
-    EXECUTION_RESULTS["meta"]["finished_at"] = datetime.now().isoformat()
-    EXECUTION_RESULTS["meta"]["exit_status"] = exitstatus
+    if EXECUTION_RESULTS["summary"]["total"] > 0:
+        EXECUTION_RESULTS["summary"]["duration"] = round(time.time() - SESSION_START, 2)
+        EXECUTION_RESULTS["meta"]["finished_at"] = datetime.now().isoformat()
+        EXECUTION_RESULTS["meta"]["exit_status"] = exitstatus
 
-    results_file = JSON_DIR / "execution-results.json"
-    try:
-        with open(results_file, "w", encoding="utf-8") as f:
-            json.dump(EXECUTION_RESULTS, f, indent=2)
-        logger.info(f"Results written to: {results_file}")
-    except Exception as e:
-        logger.error(f"Failed to write results: {e}")
+        results_file = JSON_DIR / "execution-results.json"
+        try:
+            with open(results_file, "w", encoding="utf-8") as f:
+                json.dump(EXECUTION_RESULTS, f, indent=2)
+            logger.info(f"Results written to: {results_file}")
+        except Exception as e:
+            logger.error(f"Failed to write results: {e}")

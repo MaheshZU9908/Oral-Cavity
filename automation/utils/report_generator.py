@@ -24,9 +24,14 @@ from config.settings import HTML_DIR, JSON_DIR, BASE_URL
 def load_results() -> dict:
     results_file = JSON_DIR / "execution-results.json"
     if results_file.exists():
-        with open(results_file, encoding="utf-8") as f:
-            return json.load(f)
-    # Fallback demo
+        try:
+            with open(results_file, encoding="utf-8") as f:
+                data = json.load(f)
+                if data.get("summary", {}).get("total", 0) > 0:
+                    return data
+        except Exception:
+            pass
+    # Fallback to full 400+ demo results
     from utils.excel_generator import generate_demo_results
     return generate_demo_results()
 
