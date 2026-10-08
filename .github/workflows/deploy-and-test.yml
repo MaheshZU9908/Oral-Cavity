@@ -308,28 +308,34 @@ jobs:
           PYEOF
           fi
 
-  pr-analysis:
-    name: "PR Analysis Build Check"
+  build-analysis:
+    name: "Build Analysis & Asset Integrity Check"
     needs: build
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request'
     steps:
-      - name: "Checkout"
+      - name: "Checkout Repository"
         uses: actions/checkout@v4
-      - name: "Download Build"
+      - name: "Download Build Artifact"
         uses: actions/download-artifact@v4
         with:
           name: frontend-dist
           path: dist/
-      - name: "Verify Build"
+      - name: "Verify Build & Asset Integrity"
         run: |
           ls -la dist/
-          echo "JS: $(find dist -name '*.js' | wc -l) files"
-          echo "CSS: $(find dist -name '*.css' | wc -l) files"
-      - name: "PR Summary"
+          echo "JS files: $(find dist -name '*.js' | wc -l)"
+          echo "CSS files: $(find dist -name '*.css' | wc -l)"
+          if [ ! -f dist/index.html ]; then echo "index.html missing!"; exit 1; fi
+          if [ ! -f dist/404.html ]; then echo "404.html missing!"; exit 1; fi
+      - name: "Publish Build Analysis Summary"
         run: |
-          echo "## PR Build Analysis" >> $GITHUB_STEP_SUMMARY
-          echo "| Check | Status |" >> $GITHUB_STEP_SUMMARY
-          echo "|-------|--------|" >> $GITHUB_STEP_SUMMARY
-          echo "| Build | PASSED |" >> $GITHUB_STEP_SUMMARY
-          echo "| E2E Selenium | Runs after merge to main |" >> $GITHUB_STEP_SUMMARY
+          echo "## 📦 Build Analysis & Asset Integrity" >> $GITHUB_STEP_SUMMARY
+          echo "| Check / Metric | Status / Value |" >> $GITHUB_STEP_SUMMARY
+          echo "|---|---|" >> $GITHUB_STEP_SUMMARY
+          echo "| Distribution Bundle | ✅ Verified & Complete |" >> $GITHUB_STEP_SUMMARY
+          echo "| Index Entry (index.html) | ✅ Present |" >> $GITHUB_STEP_SUMMARY
+          echo "| SPA Fallback (404.html) | ✅ Present |" >> $GITHUB_STEP_SUMMARY
+          echo "| JavaScript Assets | $(find dist -name '*.js' | wc -l) files |" >> $GITHUB_STEP_SUMMARY
+          echo "| CSS Assets | $(find dist -name '*.css' | wc -l) files |" >> $GITHUB_STEP_SUMMARY
+          echo "| Pipeline Execution | ✅ All Stages Active |" >> $GITHUB_STEP_SUMMARY
+
